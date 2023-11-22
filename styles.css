@@ -222,6 +222,7 @@ input, textarea {
 /* Add a transition for a smooth effect */
 li {
     transition: transform 0.5s, border 0.5s; /* Added border transition */
+    cursor: pointer;
     position: relative; /* Added position relative for positioning the text */
 }
 
