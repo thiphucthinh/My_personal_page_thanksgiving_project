@@ -193,7 +193,7 @@ input, textarea {
     color: grey;
 }
 
-/* Style for the "Click to see my skills" text */
+/* Style for the "Click the progress bars below to see my skills" text */
 #clickPrompt {
     font-size: 22px;
     color: rgb(108, 72, 207);
@@ -216,14 +216,12 @@ input, textarea {
 
 /* Add a class for the selected state */
 .selected {
-    transform: perspective(500px) rotateY(0deg);
-    border: 3px solid #007BFF; /* Increased border thickness */
+    border: 3px solid #007BFF;
 }
 
 /* Add a transition for a smooth effect */
 li {
     transition: transform 0.5s, border 0.5s; /* Added border transition */
-    cursor: pointer;
     position: relative; /* Added position relative for positioning the text */
 }
 
