@@ -4,10 +4,9 @@ window.addEventListener("DOMContentLoaded", event => {
         let skillElement = document.getElementById(skillId);
         let progressElement = document.getElementById(progressId);
 
-        // Toggle the 'selected' class for the clicked skill
+        // Toggle the "selected" class for the clicked skill
         skillElement.classList.toggle("selected");
 
-        // Display the percentage on the progress bar
         let percentage = progressElement.value;
 
         // Create or update the text element on the progress bar
@@ -17,7 +16,7 @@ window.addEventListener("DOMContentLoaded", event => {
             textElement.classList.add("percent-text");
             skillElement.appendChild(textElement);
         }
-        textElement.textContent = percentage + "%";
+        textElement.innerText = percentage + "%";
 
     }
 
@@ -27,7 +26,7 @@ window.addEventListener("DOMContentLoaded", event => {
     });
 
     document.getElementById("cssSkill").addEventListener("click", function () {
-        handleSkillClick('cssSkill', 'cssProgress');
+        handleSkillClick("cssSkill", "cssProgress");
     });
 
     document.getElementById("jsSkill").addEventListener("click", function () {
