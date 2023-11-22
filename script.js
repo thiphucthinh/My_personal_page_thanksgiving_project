@@ -19,9 +19,6 @@ window.addEventListener("DOMContentLoaded", event => {
         }
         textElement.textContent = percentage + "%";
 
-        // Display the percentage when the skill is selected
-        if (skillElement.classList.contains("selected")) {
-        }
     }
 
     // Add click event listeners for each skill
